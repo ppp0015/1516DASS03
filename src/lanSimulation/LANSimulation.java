@@ -28,6 +28,7 @@ public class LANSimulation {
 	public static void doRegressionTests () {
 		junit.textui.TestRunner.run (LANTests.suite());
 	}
+	
 
 	public static void simulate () {
 		Network network = Network.DefaultExample();
