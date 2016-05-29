@@ -11,5 +11,11 @@ public class WorkStation extends Node {
 		super(type, name);
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	@Override
+	public void printOn(StringBuffer buf) {
+		buf.append("Workstation ");
+		buf.append(name_);
+		buf.append(" [Workstation]");
+	}
 }
