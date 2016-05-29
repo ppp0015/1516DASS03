@@ -93,26 +93,9 @@ Construct a <em>Node</em> with given #type and #name, and which is linked to #ne
 	}
 
 	public void printXMLOn(StringBuffer buf) {
-		switch (type_) {
-		case Node.NODE:
-			buf.append("<node>");
-			buf.append(name_);
-			buf.append("</node>");
-			break;
-		case Node.WORKSTATION:
-			buf.append("<workstation>");
-			buf.append(name_);
-			buf.append("</workstation>");
-			break;
-		case Node.PRINTER:
-			buf.append("<printer>");
-			buf.append(name_);
-			buf.append("</printer>");
-			break;
-		default:
-			buf.append("<unknown></unknown>");;
-			break;
-		};
+		buf.append("<node>");
+		buf.append(name_);
+		buf.append("</node>");
 	}
 
 }
