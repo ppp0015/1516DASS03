@@ -63,7 +63,6 @@ Construct a <em>Node</em> with given #type and #name.
 	 */
 	public Node(byte type, String name) {
 		assert (type >= NODE) & (type <= PRINTER);
-		type_ = type;
 		name_ = name;
 		nextNode_ = null;
 	}
@@ -74,7 +73,6 @@ Construct a <em>Node</em> with given #type and #name, and which is linked to #ne
 	 */
 	public Node(byte type, String name, Node nextNode) {
 		assert (type >= NODE) & (type <= PRINTER);
-		type_ = type;
 		name_ = name;
 		nextNode_ = nextNode;
 	}
